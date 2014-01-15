@@ -1,0 +1,38 @@
+name:          memo
+category:      Data
+version:       0.1
+license:       BSD3
+cabal-version: >= 1.10
+license-file:  LICENSE
+author:        Edward A. Kmett
+maintainer:    Edward A. Kmett <ekmett@gmail.com>
+stability:     provisional
+homepage:      http://github.com/ekmett/memo/
+bug-reports:   http://github.com/ekmett/memo/issues
+copyright:     Copyright (C) 2013-2014 Edward A. Kmett
+synopsis:      Generic memoization
+description:   Generic memoization
+build-type:    Simple
+extra-source-files: .travis.yml README.markdown
+
+source-repository head
+  type: git
+  location: git://github.com/ekmett/memo.git
+
+library
+  default-language: Haskell98
+  other-extensions: CPP
+
+  build-depends:
+    base        >= 3   && < 5,
+    containers  >= 0.5 && < 0.6,
+    linear      >= 1.4 && < 2,
+    mtl         >= 2.1 && < 2.2,
+    profunctors == 4.*
+
+  hs-source-dirs: src
+  ghc-options:    -Wall
+
+  exposed-modules:
+    Data.Memo
+    Data.Memo.Internal
