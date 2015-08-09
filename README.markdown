@@ -1,7 +1,7 @@
 memo
 ==========
 
-[![Build Status](https://secure.travis-ci.org/ekmett/memo.png?branch=master)](http://travis-ci.org/ekmett/memo)
+[![Hackage](https://img.shields.io/hackage/v/memo.svg)](https://hackage.haskell.org/package/memo) [![Build Status](https://secure.travis-ci.org/ekmett/memo.png?branch=master)](http://travis-ci.org/ekmett/memo
 
 Generic memo combinators.
 
